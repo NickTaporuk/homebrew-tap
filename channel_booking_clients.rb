@@ -2,7 +2,7 @@
 class ChannelBookingClients < Formula
   desc "Software to create generation uuid for all steps from channel to booking."
   homepage "https://redeam.com"
-  version "0.2.5"
+  version "v0.2.5"
   bottle :unneeded
 
   if OS.mac?
