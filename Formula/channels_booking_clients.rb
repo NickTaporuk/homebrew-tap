@@ -2,14 +2,14 @@
 class ChannelsBookingClients < Formula
   desc "Software to create generation uuid for all steps from channel to booking."
   homepage ""
-  version "1.0.5"
+  version "1.0.6"
 
   if OS.mac?
-    url "https://github.com/NickTaporuk/channels_booking_clients/releases/download/v1.0.5/channels_booking_clients_Darwin_x86_64.zip"
-    sha256 "29c4c958618185bae39f99b31bd4ddd98a12a455206e76c344dd1162f8ad4662"
+    url "https://github.com/NickTaporuk/channels_booking_clients/releases/download/v1.0.6/channels_booking_clients_Darwin_x86_64.zip"
+    sha256 "df2fc97d822276b83e12043702e364acd8b07ee37f42a404f3c1848e2c00ffb6"
   elsif OS.linux?
-    url "https://github.com/NickTaporuk/channels_booking_clients/releases/download/v1.0.5/channels_booking_clients_Linux_x86_64.zip"
-    sha256 "cce5bb947ca978dc9c773219d9a45a59aa01ad439b461db5c8a8abf2f29c9e34"
+    url "https://github.com/NickTaporuk/channels_booking_clients/releases/download/v1.0.6/channels_booking_clients_Linux_x86_64.zip"
+    sha256 "5f25769e525fd9ac911bf13bb647201d6c266c81a4b98f317c4477304c2f1159"
   end
 
   def install
