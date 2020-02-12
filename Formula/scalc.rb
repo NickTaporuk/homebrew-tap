@@ -2,24 +2,24 @@
 class Scalc < Formula
   desc "Software to compute data by the original programing language"
   homepage ""
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.4/2021ai_test_Darwin_x86_64.tar.gz"
-    sha256 "d1f1d81b629007d83a5da1ec873f0defc19cd1ffcc3acf43ddd1c97825565b6d"
+    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.5/program_Darwin_x86_64.tar.gz"
+    sha256 "d5c2f7e6b9ffa4804e2d2a9e2d92edd57e5c478015c385dac7388649850613a6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.4/2021ai_test_Linux_x86_64.tar.gz"
-      sha256 "8c3b8c0d8b8b4ea37cdd2c1242c88ea99511328e714bab4610d6143e35fa7b17"
+      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.5/program_Linux_x86_64.tar.gz"
+      sha256 "c2f00f7f5d9d92746dc0dc7234a2e7b0271f13b52708a3f6e2b86259ec945529"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.4/2021ai_test_Linux_arm64.tar.gz"
-        sha256 "2d3bea454078753678e4e62e2fdd6664f56565be0f96c1a8abeffd7e20174fca"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.5/program_Linux_arm64.tar.gz"
+        sha256 "99911ea4ba2f4c9c52c3dcd215890929895b5715854cc70b78edda4811f6269c"
       else
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.4/2021ai_test_Linux_armv6.tar.gz"
-        sha256 "0c60fba6e904562f0b6edceba3ca6f025199f8fd99bf513c84e296f95c7b4532"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.5/program_Linux_armv6.tar.gz"
+        sha256 "2edfa6a7558db5d4409400be5d8cc5aa902141c518c7f73fa10c783583309812"
       end
     end
   end
