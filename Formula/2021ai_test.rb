@@ -2,24 +2,24 @@
 class 2021aiTest < Formula
   desc "Software to compute data by the original programing language"
   homepage ""
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.2/2021ai_test_Darwin_x86_64.zip"
-    sha256 "af02f9731b332617df16b7c04aef5692aa838d37da08346cb8d0b18801da11e3"
+    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.3/2021ai_test_Darwin_x86_64.tar.gz"
+    sha256 "e85639ce6a87aa19f83b9f2c2103c51b41d13de92b84dfd236c933f5e39868ac"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.2/2021ai_test_Linux_x86_64.zip"
-      sha256 "f9cafb64ae7b44f137e61caeca9b30dc68ddf7b39becadb272ed82d729eae9a6"
+      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.3/2021ai_test_Linux_x86_64.tar.gz"
+      sha256 "a244ab9c81298a8cad18052ef3c2ffb19433774228d01d646c581446a553696e"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.2/2021ai_test_Linux_arm64.zip"
-        sha256 "dbb1cda0d57e77073986a2beef502a13eda9eec3893bfdf42ad98cf66da22455"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.3/2021ai_test_Linux_arm64.tar.gz"
+        sha256 "beb5aafe534cfb9bd3c136bc76dfa9cc9d75bed092200e373b8b4d753189b577"
       else
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.2/2021ai_test_Linux_armv6.zip"
-        sha256 "6b0803258f3a22b96914553de9fee30f03fd37103233b9e37695371002ba3c7a"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.3/2021ai_test_Linux_armv6.tar.gz"
+        sha256 "dd1ae87a3a88b903f489d7febbb92b1d9c60fa6199a8fd3214d93ae1390f030e"
       end
     end
   end
