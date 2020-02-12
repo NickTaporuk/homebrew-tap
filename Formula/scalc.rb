@@ -2,24 +2,24 @@
 class Scalc < Formula
   desc "Software to compute data by the original programing language"
   homepage ""
-  version "0.0.7"
+  version "0.0.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.7/scalc_Darwin_x86_64.tar.gz"
-    sha256 "65455454da0a93ab8c8721b83f4d847756b7da246768d3697a238ba50e832583"
+    url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.8/scalc_Darwin_x86_64.tar.gz"
+    sha256 "26d75b734760562c18e27d767f68f564e74419dff8363805e43bd3f49cf98ddc"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.7/scalc_Linux_x86_64.tar.gz"
-      sha256 "3b55efd344c4e3ef4fcdf7807f0db56cc42dd88d07fbf1fbd64426df1c405153"
+      url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.8/scalc_Linux_x86_64.tar.gz"
+      sha256 "f4318425194274d35b29175b1fd390d8467789523a33bf2eff36c8682e61f1b3"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.7/scalc_Linux_arm64.tar.gz"
-        sha256 "82890d18dfbdcea959cb16f597d9aaddbd38606231c011efdfe61135dce76aa5"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.8/scalc_Linux_arm64.tar.gz"
+        sha256 "8f8fea7caa289c1d2f77b1efdc0b6fdbab22bbb54bdd73999fdfef208a87cf80"
       else
-        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.7/scalc_Linux_armv6.tar.gz"
-        sha256 "2c4d34253991d07e811bdc0e614c743659b3a0c01820cb4c204b9612018a733d"
+        url "https://github.com/NickTaporuk/2021ai_test/releases/download/v0.0.8/scalc_Linux_armv6.tar.gz"
+        sha256 "92da8372098f2916e87b61b045f7977eb08c8a6ee72bdf93f566c516b962a571"
       end
     end
   end
